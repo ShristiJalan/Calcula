@@ -8,3 +8,7 @@ def index():
 @app.route('/operation_result/', methods=['POST'])
 def operation_result():
     return (render_template, 'index.html')
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
